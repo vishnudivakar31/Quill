@@ -8,4 +8,5 @@
     <string name="login_txt">Login</string>
     <string name="or_txt">or</string>
     <string name="create_account_txt">Create Account</string>
+    <string name="username_hint">Username</string>
 </resources>
