@@ -3,4 +3,9 @@
     <string name="title_txt">Scribble the Journey with Quill</string>
     <string name="grateful_txt">What are you grateful for today?</string>
     <string name="get_started_txt">Get started</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="login_txt">Login</string>
+    <string name="or_txt">or</string>
+    <string name="create_account_txt">Create Account</string>
 </resources>
