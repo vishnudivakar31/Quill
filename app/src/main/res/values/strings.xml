@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Quill</string>
-    <string name="title_txt">Scribble the Journey with Quill</string>
+    <string name="title_txt">Scribble the Journey</string>
     <string name="grateful_txt">What are you grateful for today?</string>
     <string name="get_started_txt">Get started</string>
     <string name="email_hint">Email</string>
@@ -9,4 +9,11 @@
     <string name="or_txt">or</string>
     <string name="create_account_txt">Create Account</string>
     <string name="username_hint">Username</string>
+    <string name="journal_title_txt">Title</string>
+    <string name="your_thoughs_txt">Your thoughs.....</string>
+    <string name="save_txt">Save</string>
+    <string name="image_for_journal_txt">Image for journal</string>
+    <string name="camera_button_to_add_images">Camera button to add images.</string>
+    <string name="sample_username_txt">Smith</string>
+    <string name="sample_date_txt">Today</string>
 </resources>

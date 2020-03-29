@@ -28,6 +28,8 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Objects;
 
+import edu.njit.quill.util.JournalApi;
+
 public class CreateAccountActivity extends AppCompatActivity {
     private static final String USERS = "users";
     private FirebaseAuth firebaseAuth;
@@ -108,10 +110,13 @@ public class CreateAccountActivity extends AppCompatActivity {
                                                                     progressBar.setVisibility(ProgressBar.INVISIBLE);
                                                                     String name = task.getResult().getString("username");
 
+                                                                    JournalApi journalApi = JournalApi.getInstance();
+
+                                                                    journalApi.setUserId(currentUserId);
+                                                                    journalApi.setUsername(name);
+
                                                                     Intent intent = new Intent(CreateAccountActivity.this,
                                                                             PostJournalActivity.class);
-                                                                    intent.putExtra("username", name);
-                                                                    intent.putExtra("user_id", currentUserId);
                                                                     startActivity(intent);
                                                                 }
                                                             }
