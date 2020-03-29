@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "332316366031",
+    "firebase_url": "https://quill-6516e.firebaseio.com",
+    "project_id": "quill-6516e",
+    "storage_bucket": "quill-6516e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:332316366031:android:b28fd52b7996fe110653ba",
+        "android_client_info": {
+          "package_name": "edu.njit.quill"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "332316366031-ke440j5qfh8qhdb4ojk3j8vehr3v95hr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "edu.njit.quill",
+            "certificate_hash": "7bb46590d67fcc032069ef75cf86fe700478da13"
+          }
+        },
+        {
+          "client_id": "332316366031-on14p8d0bgibmmf1risgqe1bun3srm5v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAN4sv7WNmCZ5OwCswyNyq6zJRu_IuZssE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "332316366031-on14p8d0bgibmmf1risgqe1bun3srm5v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
