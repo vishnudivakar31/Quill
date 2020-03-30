@@ -25,4 +25,6 @@
     <string name="invalid_user">Invalid email or password</string>
     <string name="menu_title">Add Thoughts</string>
     <string name="sign_out_txt">Sign-out</string>
+    <string name="no_thoughts_found">No thoughts found. Click setting to create new thoughts</string>
+    <string name="share_txt">Share</string>
 </resources>

@@ -95,7 +95,7 @@ public class LoginActivity extends AppCompatActivity {
                                                         journalApi.setUserId(currentUserId);
 
                                                         startActivity(new Intent(LoginActivity.this,
-                                                                PostJournalActivity.class));
+                                                                JournalListActivity.class));
                                                         finish();
                                                     }
                                                 }
