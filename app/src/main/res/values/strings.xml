@@ -22,4 +22,7 @@
     <string name="cancel">cancel</string>
     <string name="mandatory_warning">All fields are mandatory</string>
     <string name="failure_message_txt">Oops... Something went wrong.</string>
+    <string name="invalid_user">Invalid email or password</string>
+    <string name="menu_title">Add Thoughts</string>
+    <string name="sign_out_txt">Sign-out</string>
 </resources>
