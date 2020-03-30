@@ -1,6 +1,8 @@
 package edu.njit.quill.ui;
 
 import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.text.format.DateUtils;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -23,6 +25,7 @@ public class JournalRecyclerAdapter extends RecyclerView.Adapter<JournalRecycler
 
     private Context context;
     private List<Journal> journalList;
+    private String imageUrl;
 
     public JournalRecyclerAdapter(Context context, List<Journal> journalList) {
         this.context = context;
@@ -40,7 +43,7 @@ public class JournalRecyclerAdapter extends RecyclerView.Adapter<JournalRecycler
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         Journal journal = journalList.get(position);
-        String imageUrl, timeAgo;
+        String timeAgo;
 
         holder.titleTextView.setText(journal.getTitle());
         holder.thoughtTextView.setText(journal.getThought());
@@ -79,7 +82,12 @@ public class JournalRecyclerAdapter extends RecyclerView.Adapter<JournalRecycler
             shareButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                   // context.startActivity();
+                   Intent emailIntent = new Intent(Intent.ACTION_SEND);
+                   emailIntent.putExtra(Intent.EXTRA_TEXT, thoughtTextView.getText().toString());
+                   emailIntent.putExtra(Intent.EXTRA_SUBJECT, titleTextView.getText().toString());
+                   emailIntent.setType("application/image");
+                   emailIntent.putExtra(Intent.EXTRA_STREAM, Uri.parse(imageUrl));
+                   context.startActivity(emailIntent);
                 }
             });
         }

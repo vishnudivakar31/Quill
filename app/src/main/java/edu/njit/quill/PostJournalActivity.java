@@ -33,6 +33,7 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 
+import java.io.ByteArrayOutputStream;
 import java.text.DateFormat;
 import java.util.Date;
 import java.util.Locale;
@@ -236,8 +237,11 @@ public class PostJournalActivity extends AppCompatActivity implements View.OnCli
             if(data != null) {
                 Bundle bundle = data.getExtras();
                 Bitmap imageBitmap = (Bitmap) bundle.get("data");
-                imageUri = data.getData();
                 journalImageView.setImageBitmap(imageBitmap);
+                ByteArrayOutputStream bytes = new ByteArrayOutputStream();
+                imageBitmap.compress(Bitmap.CompressFormat.JPEG, 100, bytes);
+                String path = MediaStore.Images.Media.insertImage(getContentResolver(), imageBitmap, "my_image_" + Timestamp.now().getSeconds(), null);
+                imageUri = Uri.parse(path);
             }
         } else if(requestCode == GALLERY_CODE && resultCode == RESULT_OK) {
             if(data != null) {
