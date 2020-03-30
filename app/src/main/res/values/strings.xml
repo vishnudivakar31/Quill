@@ -20,4 +20,6 @@
     <string name="camera_txt">Camera</string>
     <string name="gallery_txt">Gallery</string>
     <string name="cancel">cancel</string>
+    <string name="mandatory_warning">All fields are mandatory</string>
+    <string name="failure_message_txt">Oops... Something went wrong.</string>
 </resources>

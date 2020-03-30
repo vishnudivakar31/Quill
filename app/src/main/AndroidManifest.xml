@@ -4,7 +4,10 @@
     package="edu.njit.quill">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-feature android:name="android.hardware.camera" android:required="true" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
 
     <application
         android:name=".util.JournalApi"
@@ -15,7 +18,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".PostJournalActivity"></activity>
+        <activity android:name=".JournalListActivity"></activity>
+        <activity android:name=".PostJournalActivity" />
         <activity android:name=".CreateAccountActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".MainActivity">
