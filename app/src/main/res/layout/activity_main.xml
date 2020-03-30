@@ -55,7 +55,7 @@
         android:id="@+id/startButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/transparent_button_with_border"
+        android:background="@android:color/transparent"
         android:text="@string/get_started_txt"
         android:textColor="@color/colorAccent" />
 </LinearLayout>

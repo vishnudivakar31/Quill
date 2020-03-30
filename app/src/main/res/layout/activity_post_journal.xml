@@ -11,14 +11,13 @@
         android:layout_width="0dp"
         android:layout_height="275dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="2dp"
         android:layout_marginEnd="8dp"
         android:contentDescription="@string/image_for_journal_txt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/app_name"
-        app:srcCompat="@drawable/image_one" />
+        app:layout_constraintTop_toBottomOf="@+id/appTitle"
+        app:srcCompat="@drawable/image_four" />
 
     <ImageView
         android:id="@+id/post_camera_button"
@@ -38,7 +37,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="@string/sample_username_txt"
-        android:textColor="@color/cardview_light_background"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="@+id/post_camera_background"
         app:layout_constraintTop_toBottomOf="@+id/post_camera_button" />
@@ -49,7 +48,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="2dp"
         android:text="@string/sample_date_txt"
-        android:textColor="@color/cardview_light_background"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="@+id/post_username_txt"
         app:layout_constraintTop_toBottomOf="@+id/post_username_txt" />
@@ -72,27 +71,27 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:autofillHints=""
         android:ems="10"
         android:gravity="start|top"
         android:hint="@string/your_thoughs_txt"
         android:inputType="textMultiLine"
+        android:maxLines="15"
         app:layout_constraintEnd_toEndOf="@+id/post_title_et"
         app:layout_constraintStart_toStartOf="@+id/post_title_et"
         app:layout_constraintTop_toBottomOf="@+id/post_title_et"
-        android:autofillHints="" tools:targetApi="o" />
+        tools:targetApi="o" />
 
     <Button
         android:id="@+id/post_save_button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/transparent_button_with_border"
         android:text="@string/save_txt"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="@+id/post_thought_et"
+        app:layout_constraintStart_toStartOf="@+id/post_thought_et"
+        app:layout_constraintTop_toBottomOf="@+id/post_progressbar" />
 
     <ProgressBar
         android:id="@+id/post_progressbar"
@@ -117,4 +116,14 @@
         android:textSize="40sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/appTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_mono_bold"
+        android:text="@string/title_txt"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/app_name"
+        app:layout_constraintTop_toBottomOf="@+id/app_name" />
 </androidx.constraintlayout.widget.ConstraintLayout>

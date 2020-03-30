@@ -16,4 +16,8 @@
     <string name="camera_button_to_add_images">Camera button to add images.</string>
     <string name="sample_username_txt">Smith</string>
     <string name="sample_date_txt">Today</string>
+    <string name="pick_your_choice_txt">Choose media</string>
+    <string name="camera_txt">Camera</string>
+    <string name="gallery_txt">Gallery</string>
+    <string name="cancel">cancel</string>
 </resources>
